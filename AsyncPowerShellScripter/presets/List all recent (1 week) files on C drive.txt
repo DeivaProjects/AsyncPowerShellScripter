@@ -1,0 +1,6 @@
+#filter script found at: http://fundamental.antville.org/ 
+filter recently ($days=1) {
+  if ($_.LastWriteTime -gt
+    ([datetime]::now - (New-TimeSpan -days $days)))
+  {$_}
+}

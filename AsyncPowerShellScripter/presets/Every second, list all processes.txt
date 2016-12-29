@@ -1,0 +1,5 @@
+while(1)
+{
+    Get-Process | Out-String -stream
+    Start-Sleep -milliseconds 1000
+}

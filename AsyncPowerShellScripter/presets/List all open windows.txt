@@ -1,0 +1,5 @@
+#script found at: http://thepowershellguy.com/ 
+Get-Process | 
+    Where-Object {$_.MainWindowTitle -ne ""} |
+    Select-Object MainWindowTitle |
+    Out-String -stream

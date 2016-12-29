@@ -1,0 +1,1 @@
+Get-ChildItem c:\ -recurse | Out-String -stream
